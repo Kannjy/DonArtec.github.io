@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DonArtec</title>
+    <link rel="icon" type="image/png" href="img/IMG-20250501-WA0005.jpg">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="js/inicio.js" defer></script>
+</head>
+
+<body>
+
+    <%- include('./layouts/navbar.ejs') %>
+
+    <header class="hero">
+        <div class="hero-particles" id="particles-js"></div>
+        <div class="container hero-content">
+            <h1 class="animate__animated animate__fadeInDown">DonΛrtec: Reciclaje de Componentes Tecnológicos</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">Ayúdanos a transformar desechos
+                electrónicos en herramientas educativas para comunidades necesitadas</p>
+            <a href="#donar" class="btn btn-hero animate__animated animate__fadeInUp animate__delay-2s">
+                <span>¡Quiero Donar!</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </header>
+
+    <section id="acerca" class="section-padding">
+        <div class="container">
+            <h2 class="section-title reveal-up">Nuestro Proyecto Ecosocial</h2>
+            <div class="about card-shadow reveal-up">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3><i class="fas fa-leaf text-primary"></i> ¿Qué hacemos?</h3>
+                        <p>DonArtec es una iniciativa estudiantil que recolecta componentes de computadoras en desuso
+                            para:</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Reducir la contaminación electrónica</li>
+                            <li><i class="fas fa-check-circle"></i> Reconstruir equipos funcionales para estudiantes sin
+                                recursos</li>
+                            <li><i class="fas fa-check-circle"></i> Capacitar a comunidades en el uso y mantenimiento de
+                                tecnología</li>
+                            <li><i class="fas fa-check-circle"></i> Crear un laboratorio de investigación en tecnologías
+                                sostenibles</li>
+                        </ul>
+                        <p>Con tu donación, no solo ayudas al medio ambiente sino que también contribuyes a cerrar la
+                            brecha digital en nuestra comunidad.</p>
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <div class="stat-number counter" data-target="1"></div>
+                                <div class="stat-label">Equipos Donados</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number counter" data-target="1"></div>
+                                <div class="stat-label">Estudiantes Beneficiados</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number counter" data-target="2"></div>
+                                <div class="stat-label">kg Reciclados</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-container">
+                            <img src="img/WhatsApp-Image-2022-03-30-at-4.32.25-PM-1.jpg" width="600" height="500"
+                                alt="Estudiantes trabajando en componentes reciclados" class="floating">
+                            <div class="image-badge">
+                                <i class="fas fa-award"></i>
+                                <span>Proyecto Voluntario</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="componentes" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title reveal-up">Componentes que Necesitamos</h2>
+            <p class="section-subtitle reveal-up">¡Todos los componentes son útiles, incluso si no funcionan
+                completamente pueden servir para prácticas educativas!</p>
+
+            <div class="components-needed reveal-stagger">
+                <div class="component-card">
+                    <div class="component-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="component-image">
+                        <img src="img/cpu.jpg" alt="CPU">
+                    </div>
+                    <div class="component-info">
+                        <h3>Procesadores (CPU)</h3>
+                        <p>Cualquier generación, incluso los más antiguos pueden ser útiles para prácticas educativas.
+                        </p>
+                        <span class="badge">Alta Demanda</span>
+                    </div>
+                </div>
+
+                <div class="component-card">
+                    <div class="component-icon">
+                        <i class="fas fa-memory"></i>
+                    </div>
+                    <div class="component-image">
+                        <img src="img/memoria ram.jpg" alt="RAM">
+                    </div>
+                    <div class="component-info">
+                        <h3>Memoria RAM</h3>
+                        <p>DDR2, DDR3, DDR4 o cualquier tipo, todas son bienvenidas para actualizar equipos.</p>
+                        <span class="badge">Muy Necesario</span>
+                    </div>
+                </div>
+
+                <div class="component-card">
+                    <div class="component-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="component-image">
+                        <img src="img/placa madre.jpg" alt="Motherboard">
+                    </div>
+                    <div class="component-info">
+                        <h3>Placas Madre</h3>
+                        <p>Fundamentales para reconstruir equipos completos para estudiantes.</p>
+                        <span class="badge">Prioridad</span>
+                    </div>
+                </div>
+
+                <div class="component-card">
+                    <div class="component-icon">
+                        <i class="fas fa-hdd"></i>
+                    </div>
+                    <div class="component-image">
+                        <img src="img/Almacenamiento.JPG" alt="Storage">
+                    </div>
+                    <div class="component-info">
+                        <h3>Almacenamiento</h3>
+                        <p>Discos duros, SSD, incluso unidades más antiguas son valiosas.</p>
+                        <span class="badge">Necesario</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,192L60,176C120,160,240,128,360,138.7C480,149,600,203,720,218.7C840,235,960,213,1080,181.3C1200,149,1320,107,1380,85.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="impacto" class="impact-section section-padding">
+        <div class="container">
+            <h2 class="section-title reveal-up">Nuestro Impacto</h2>
+
+            <div class="impact-icons reveal-stagger">
+                <div class="impact-item">
+                    <div class="impact-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>Impacto Ambiental</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-percent="100"></div>
+                    </div>
+                    <p>Reducimos la contaminación electrónica y damos nueva vida a componentes que terminarían en
+                        vertederos.</p>
+                    <!-- <a href="#" class="link-more">Ver más <i class="fas fa-angle-right"></i></a> -->
+                </div>
+
+                <div class="impact-item">
+                    <div class="impact-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Impacto Educativo</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-percent="100"></div>
+                    </div>
+                    <p>Proveemos herramientas tecnológicas a estudiantes sin recursos y ofrecemos talleres de
+                        capacitación.</p>
+                    <!-- <a href="#" class="link-more">Ver más <i class="fas fa-angle-right"></i></a> -->
+                </div>
+
+                <div class="impact-item">
+                    <div class="impact-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Investigación</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-percent="100"></div>
+                    </div>
+                    <p>Desarrollamos investigaciones universitarias sobre tecnologías sostenibles y economía circular.
+                    </p>
+                    <!-- <a href="#" class="link-more">Ver más <i class="fas fa-angle-right"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donar" class="section-padding bg-gradient">
+        <div class="container">
+            <h2 class="section-title light-title reveal-up">Dona tus Componentes</h2>
+            <div class="donation-form card-shadow reveal-up">
+                <form id="donation-form" action="/donacion" method="POST">
+                    <div class="form-header">
+                        <i class="fas fa-hand-holding-heart form-icon"></i>
+                        <h3>Formulario de Donación</h3>
+                        <p>Completa el formulario y te contactaremos pronto</p>
+                    </div>
+
+                    <div class="form-body">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name"><i class="fas fa-user"></i> Nombre Completo</label>
+                                <input type="text" id="name" name="name" required placeholder="Tu nombre completo">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico</label>
+                                <input type="email" id="email" name="email" required
+                                    placeholder="Tu correo electrónico">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone"></i> Teléfono</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Tu número de teléfono">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="component-type"><i class="fas fa-laptop-code"></i> Tipo de
+                                    Componente</label>
+                                <select id="component-type" name="componentType" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="Procesador">Procesador (CPU)</option>
+                                    <option value="Placa Madre">Placa Madre</option>
+                                    <option value="Memoria RAM">Memoria RAM</option>
+                                    <option value="Disco Duro">Disco Duro (HDD/SSD)</option>
+                                    <option value="Targeta Grafica">Tarjeta Gráfica</option>
+                                    <option value="Fuente Poder">Fuente de Poder</option>
+                                    <option value="gabinete">Gabinete</option>
+                                    <option value="perifericos">Periféricos (teclado, mouse, etc.)</option>
+                                    <option value="monitor">Monitor</option>
+                                    <option value="Otros">Otros</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description"><i class="fas fa-info-circle"></i> Descripción del
+                                Componente</label>
+                            <textarea id="description" name="description"
+                                placeholder="Por favor, incluye marca, modelo, estado y cualquier otra información relevante."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pickup"><i class="fas fa-truck"></i> ¿Necesitas que recojamos tu
+                                donación?</label>
+                            <select id="pickup" name="pickup" required>
+                                <option value="no">No, puedo llevarlo al punto de recolección</option>
+                                <option value="yes">Sí, necesito que lo recojan</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-footer">
+                        <button type="submit" class="btn btn-block">
+                            <i class="fas fa-paper-plane"></i> Enviar Donación
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <%- include('./layouts/footer.ejs') %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+</body>
+
+</html>

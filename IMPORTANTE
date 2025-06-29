@@ -1,0 +1,11 @@
+Iniciar npm
+    - npm init -y
+
+Installar Dependencias:
+    - npm install express ejs mysql2
+    - npm install --save-dev nodemon
+    - npm install nodemailer (Control del gmail)
+
+Iniciar Proyecto:
+    - npm run dev
+
