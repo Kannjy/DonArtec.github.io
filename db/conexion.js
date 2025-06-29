@@ -1,4 +1,4 @@
-const mysql = require('mysql');
+/*const mysql = require('mysql');
 
 // Aun no utiliza base de datos
 const conexion = mysql.createConnection({
@@ -13,4 +13,4 @@ connection.connect((err) => {
     console.log('Conectado a la base de datos MySQL');
 });
 
-module.exports = connection;
+module.exports = connection;*/
