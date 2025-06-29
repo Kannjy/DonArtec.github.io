@@ -17,5 +17,5 @@ app.use('/', rutas);
 
 // iniciar servidor
 app.listen(port, () =>{
-    console.log(`Servidor Activo en: http://localhost:${port}`);
+    console.log(`Servidor Activo en: ${port}`);
 });
