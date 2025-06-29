@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const rutas = require('./routes/index');
-const port = 3000;
+const port = 10000;
 
 // configurar EJS como motor de plantillas
 app.set('view engine', 'ejs');
